@@ -1,6 +1,6 @@
 class SpecialHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <header>
     <img class="logo" src="images/logo-fik.png">
     <nav class="navbar">
@@ -11,7 +11,7 @@ class SpecialHeader extends HTMLElement {
       <div class="menu-item">
         <a href="#">Alumni ▾</a>
         <div class="dropdown">
-          <a href="#">Tracer Study FIK UPNVJ</a>
+          <a href="/tracer-study">Tracer Study FIK UPNVJ</a>
         </div>
       </div>
 
@@ -39,12 +39,12 @@ class SpecialHeader extends HTMLElement {
     </nav>
   </header>
     `;
-    }
+  }
 }
 
 class SpecialFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <footer>
     <div class="container">
       <img class="logo-upn" src="images/logo-fik.png">
@@ -69,7 +69,7 @@ class SpecialFooter extends HTMLElement {
     </div>
   </footer>
     `;
-    }
+  }
 }
 
 customElements.define("special-header", SpecialHeader);
