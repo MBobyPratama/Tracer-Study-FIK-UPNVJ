@@ -24,9 +24,9 @@
             </div>
           </div>
           <h1>Tentang Tracer Study FIK UPNVJ</h1>
-          <p>Kelas B S1 Sistem Informasi UPNVJ terdiri dari 40 mahasiswa dengan semangat untuk terus berkembang di dunia
-            teknologi informasi. Visi kami adalah menjadi kelas terdepan dalam penerapan teknologi untuk masyarakat. Misi
-            kami adalah membangun lingkungan belajar yang kolaboratif dan inovatif.</p>
+          <p>Tracer study adalah salah satu upaya penting kami dalam memetakan keberhasilan lulusan Fakultas Ilmu Komputer UPN Veteran Jakarta dalam dunia kerja dan kontribusinya di masyarakat. Melalui tracer study, kami mengumpulkan informasi mengenai perjalanan karier, relevansi pendidikan, dan masukan dari para alumni untuk meningkatkan kualitas pendidikan dan layanan yang kami tawarkan.</p>
+          <p>Tujuan utama dari tracer study ini adalah untuk:</p>
+          <p>Partisipasi Anda, sebagai alumni, sangat berarti bagi pengembangan Fakultas Ilmu Komputer UPN Veteran Jakarta. Yuk, bantu kami membangun masa depan yang lebih baik dengan mengisi Tracer Study Alumni melalui survei ini! Klik tombol di bawah untuk memulai.</p>
         </div>
       </div>
     </section>
