@@ -11,7 +11,10 @@ Route::get('/home', function () {
     return view('index');
 });
 
-
+Route::get('/tracer-study', function () {
+    return view('tracerStudy');
+});
+  
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
