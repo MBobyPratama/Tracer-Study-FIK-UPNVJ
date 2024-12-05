@@ -11,6 +11,10 @@ Route::get('/home', function () {
     return view('index');
 });
 
+Route::get('/berita', function () {
+    return view('berita');
+});
+
 Route::get('/tracer-study', function () {
     return view('tracerStudy');
 });

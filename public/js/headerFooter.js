@@ -6,7 +6,7 @@ class SpecialHeader extends HTMLElement {
     <nav class="navbar">
       <a href="/home">Beranda</a>
       <a href="#">Tentang Kami</a>
-      <a href="#">Berita</a>
+      <a href="/berita">Berita</a>
       
       <div class="menu-item">
         <a href="#">Alumni ▾</a>
