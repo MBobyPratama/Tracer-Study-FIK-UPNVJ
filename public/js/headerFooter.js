@@ -33,7 +33,7 @@ class SpecialHeader extends HTMLElement {
         </div>
       </div>
 
-      <a href="#" class="btn-login-link">
+      <a href="/login" class="btn-login-link">
         <button class="btn-login">Login Alumni</button>
       </a>
     </nav>
