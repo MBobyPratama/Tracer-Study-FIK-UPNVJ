@@ -37,19 +37,13 @@
                     <li><div class="list-item">Memberikan umpan balik bagi pengembangan Perguruan Tinggi.</div></li>
                 </ul>
               </div>
-              <div class="mekanisme">
-                <h1>Mekanisme Pengisian Tracer Study</h1>
-                <div class="step">
-                  <img src="/images/poster-langkah-tracer-study.png" alt="Mekanisme Pengisian Tracer Study" />
-                </div>
-                <a href="#" class="btn-survey">Isi Survei</a>
-                <p>Hasil Tracer Study Fakultas Ilmu Komputer UPN Veteran Jakarta akan menjadi data yang berharga bagi kami dan diperlukan. Sebagai alumni, partisipasi Anda sangat berarti bagi pengembangan Fakultas Ilmu Komputer UPN Veteran Jakarta. Maka dari itu, bantu kami membangun masa depan yang lebih baik dengan mengisi Tracer Study Alumni melalui survei ini! Klik tombol di atas untuk memulai.</p>
-              </div>
+              <p>Hasil Tracer Study Fakultas Ilmu Komputer UPN Veteran Jakarta akan menjadi data yang berharga bagi kami dan diperlukan. Sebagai alumni, partisipasi Anda sangat berarti bagi pengembangan Fakultas Ilmu Komputer UPN Veteran Jakarta. Bantu kami membangun masa depan yang lebih baik dengan mengisi Tracer Study Alumni melalui survei ini! Klik tombol di bawah untuk memulai.</p>
+              <a href="#" class="btn-survey">Isi Survei</a>  
             </div>
           </section>
         </div>
       </div>
-    </section>
+  </section>
 
   <special-footer></special-footer>
   <script src="js/headerFooter.js"></script>
