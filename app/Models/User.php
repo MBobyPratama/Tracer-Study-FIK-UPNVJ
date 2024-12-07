@@ -28,6 +28,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'no_ktp',
         'tempat_lahir',
         'tgl_lahir',
+        'foto',
     ];
 
     /**
