@@ -6,20 +6,11 @@ class SpecialHeader extends HTMLElement {
     <nav class="navbar">
       <a href="/home">Beranda</a>
       <a href="#">Tentang Kami</a>
-      <a href="/berita">Berita</a>
       
       <div class="menu-item">
         <a href="#">Alumni ▾</a>
         <div class="dropdown">
           <a href="/tracer-study">Tracer Study FIK UPNVJ</a>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <a href="#">Karier ▾</a>
-        <div class="dropdown">
-          <a href="#">Lowongan Kerja</a>
-          <a href="#">Magang</a>
         </div>
       </div>
 

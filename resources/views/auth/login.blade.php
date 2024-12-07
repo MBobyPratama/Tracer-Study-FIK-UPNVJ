@@ -1,22 +1,27 @@
 <x-guest-layout>
+    <style>
+        .btn-login {
+            background: #ff4500 !important;
+            color: #fff !important;
+        }
+
+        .btn-login:hover {
+            background: #e63900 !important;
+        }
+    </style>
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <!-- Email Address -->
-        {{-- <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div> --}}
-
         <!-- Email Address or NIM -->
         <div>
+            <div id="loginWarning" class="text-red-500 mt-2 hidden"></div>
+            <x-input-error :messages="$errors->get('id_user')" class="mt-2" />
             <x-input-label for="id_user" :value="__('NIM atau Email UPNVJ')" />
             <x-text-input id="id_user" class="block mt-1 w-full" type="text" name="id_user" :value="old('is_user')" required autofocus autocomplete="id_user" />
-            <x-input-error :messages="$errors->get('id_user')" class="mt-2" />
         </div>
 
         <!-- Password -->
@@ -46,9 +51,37 @@
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
+            <x-primary-button class="ms-3 btn-login">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
     </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const response = await fetch('/login', {
+            method: 'POST',
+            body: new FormData(e.target),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        const data = await response.json();
+        const loginWarning = document.getElementById('loginWarning');
+        
+        if (data.success) {
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('name', data.user.name);
+            localStorage.setItem('nim', data.user.nim);
+            localStorage.setItem('profile_photo', data.user.foto);
+            window.location.href = '/dashboard';
+        } else {
+            // Show warning if login fails
+            loginWarning.textContent = 'NIM atau password yang Anda masukkan salah!';
+            loginWarning.classList.remove('hidden');
+        }
+        });
+    </script>
 </x-guest-layout>

@@ -7,7 +7,7 @@
   <title>Tracer Study FIK UPNVJ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  {{-- <script src="js/script.js"></script> --}}
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 </ul>
               </div>
               <p>Hasil Tracer Study Fakultas Ilmu Komputer UPN Veteran Jakarta akan menjadi data yang berharga bagi kami dan diperlukan. Sebagai alumni, partisipasi Anda sangat berarti bagi pengembangan Fakultas Ilmu Komputer UPN Veteran Jakarta. Bantu kami membangun masa depan yang lebih baik dengan mengisi Tracer Study Alumni melalui survei ini! Klik tombol di bawah untuk memulai.</p>
-              <a href="#" class="btn-survey">Isi Survei</a>  
+              <a href="/kuesioner" class="btn-survey">Isi Survei</a>  
             </div>
           </section>
         </div>

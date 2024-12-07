@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('no_ktp')->unique();
             $table->string('tempat_lahir');
             $table->date('tgl_lahir');
+            $table->string('foto');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
