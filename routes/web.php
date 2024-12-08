@@ -11,6 +11,10 @@ Route::get('/home', function () {
     return redirect('/');
 });
 
+Route::get('/about-us', function () {
+    return view('aboutUS');
+});
+
 Route::get('/berita', function () {
     return view('berita');
 });

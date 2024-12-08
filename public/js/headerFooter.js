@@ -5,7 +5,7 @@ class SpecialHeader extends HTMLElement {
     <img class="logo" src="images/logo-fik.png">
     <nav class="navbar">
       <a href="/home">Beranda</a>
-      <a href="#">Tentang Kami</a>
+      <a href="/about-us">Tentang Kami</a>
       
       <div class="menu-item">
         <a href="#">Alumni ▾</a>
