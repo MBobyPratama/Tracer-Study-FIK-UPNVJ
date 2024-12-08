@@ -28,6 +28,32 @@ class seed extends Seeder
             'password' => bcrypt('michael123')
         ],
         [
+            'name' => 'yoga',
+            'nim' => '2310512053',
+            'email' => 'yogaramasahdan@gmail.com',
+            'gender' => 'L',
+            'no_hp' => '081201010101',
+            'alamat' => 'Jl. B, Ke. Kebon Jeruk, Jakarta Barat',
+            'no_ktp' => '3173010101010001',
+            'tempat_lahir' => 'Jakarta',
+            'tgl_lahir' => '2004-07-07',
+            'foto' => 'https://i.imgur.com/EhqsosX.jpeg',
+            'password' => bcrypt('yoga123')
+        ],
+        [
+            'name' => 'anabel',
+            'nim' => '2310512083',
+            'email' => 'abelevrilya04@gmail.com',
+            'gender' => 'P',
+            'no_hp' => '081204040404',
+            'alamat' => 'Jl. Pelangi, Citayem, Jawa Barat',
+            'no_ktp' => '3173040404040004',
+            'tempat_lahir' => 'Jakarta',
+            'tgl_lahir' => '2004-04-04',
+            'foto' => 'https://i.imgur.com/EhqsosX.jpeg',
+            'password' => bcrypt('abell444')
+        ],
+        [
             'name' => 'franklin',
             'nim' => '2310512057',
             'email' => '2310512057@mahasiswa.upnvj.ac.id',
