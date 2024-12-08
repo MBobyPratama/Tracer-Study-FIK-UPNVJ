@@ -17,6 +17,7 @@
 
 <body>
 <special-header></special-header>
+
 <section class="hero">
     <div class="container">
         <div class="home">
@@ -84,36 +85,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border">
-                    </div>
-                    <div class="grid-2">
-                        <div class="card">
-                            <img src="" alt="">
-                            </div>
-                        <div class="card">
-                            <h1></h1>
-                            <h2></h2>
-                            <p>
-                        </div>
-                    </div>
-                    <div class="border">
-                    </div>
-                    <div class="grid-2">
-                        <div class="card">
-                            <img src="" alt="">
-                            </div>
-                        <div class="card">
-                            <h1></h1>
-                            <h2></h2>
-                            <p>
-                        </div>
-                    </div>
-                    <div class="border">
-                    </div>
                 </div>
-                
             </section>
-
         </div>
     </div>
 </section>
