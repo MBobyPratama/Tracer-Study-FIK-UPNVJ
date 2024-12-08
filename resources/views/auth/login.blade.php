@@ -78,7 +78,6 @@
             localStorage.setItem('profile_photo', data.user.foto);
             window.location.href = '/dashboard';
         } else {
-            // Show warning if login fails
             loginWarning.textContent = 'NIM atau password yang Anda masukkan salah!';
             loginWarning.classList.remove('hidden');
         }

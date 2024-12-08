@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuisioner Tracer Study</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
+<x-layout>
+
 <body>
     <special-header></special-header>
     <section class="hero">
@@ -14,6 +7,7 @@
             <div class="form-container">
                 <h2>Kuisioner Tracer Study Fakultas Ilmu Komputer UPNVJ</h2> <br>
                 <form id="kuisionerForm">
+                    @csrf
                     <div class="form-group">
                         <label for="name">Nama Lengkap:</label>
                         <input type="text" id="name" name="name" required>
@@ -113,38 +107,48 @@
     </section>
     <special-footer></special-footer>
     <script>
-    document.getElementById('kuisionerForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
+    document.getElementById('kuisionerForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = { data: {} }; // Membuat objek data
+
+    formData.forEach((value, key) => {
+        data.data[key] = value; // Menyimpan semua jawaban dalam array 'data'
+    });
+
+    const jsonData = JSON.stringify(data, null, 2);
+
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+    try {
+        const response = await fetch('/posts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': csrfToken,
+            },
+            body: jsonData,
         });
-        const jsonData = JSON.stringify(data, null, 2);
+        console.log('Response status:', response.status);
+        const responseData = await response.json();
+        console.log('Response data:', responseData);
 
-        localStorage.setItem('kuisionerData', jsonData);
 
-        const modal = document.getElementById('customAlert');
-        modal.style.display = "block";
-
-        const blob = new Blob([jsonData], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'kuisioner_data.json'; 
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a); 
-        URL.revokeObjectURL(url); 
-
-        document.getElementById('okButton').onclick = function() {
-            window.location.href = '/';
-        };
-
-        document.getElementById('closeModal').onclick = function() {
-            modal.style.display = "none";
-        };
+        if (response.ok) {
+            const modal = document.getElementById('customAlert');
+            modal.style.display = "block";
+            document.getElementById('okButton').onclick = function() {
+                window.location.href = '/';
+            };
+        } else {
+            const errorData = await response.json();
+            console.error('Error response:', errorData);
+            alert('Error: ' + errorData.message);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Terjadi kesalahan saat mengirim data.');
+    }
     });
 
     window.onclick = function(event) {
@@ -154,7 +158,6 @@
         }
     };
     </script>
-    <script src="js/headerFooter.js"></script>
     <div id="customAlert" class="modal">
         <div class="modal-content">
             <p>Kuisioner berhasil disimpan!</p>
@@ -162,4 +165,5 @@
         </div>
     </div>
 </body>
-</html>
+
+</x-layout>
