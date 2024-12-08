@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('index');
@@ -18,6 +19,20 @@ Route::get('/berita', function () {
 Route::get('/tracer-study', function () {
     return view('tracerStudy');
 });
+
+Route::get('/career-class', function () {
+    return view('career-class');
+});
+
+Route::get('/career-fair', function () {
+    return view('career-fair');
+});
+
+Route::get('/company-talk', function () {
+    return view('company-talk');
+});
+
+Route::post('/posts', [PostController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

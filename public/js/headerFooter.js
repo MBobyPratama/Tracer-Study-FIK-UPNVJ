@@ -17,10 +17,9 @@ class SpecialHeader extends HTMLElement {
       <div class="menu-item">
         <a href="#">Event ▾</a>
         <div class="dropdown">
-          <a href="#">Career Class</a>
-          <a href="#">Company Talk</a>
-          <a href="#">Career Fair</a>
-          <a href="#">Alumni Sharing</a>
+          <a href="/career-class">Career Class</a>
+          <a href="/company-talk">Company Talk</a>
+          <a href="/career-fair">Career Fair</a>
         </div>
       </div>
 
