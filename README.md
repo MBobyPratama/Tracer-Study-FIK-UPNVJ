@@ -138,8 +138,8 @@ Terima kasih telah menggunakan proyek ini!
 
 ## Our Team
 
-Haidar Fadhillah Arasy - 2310512046
-Yoga Aditya Ramasahdan - 2310512053
-Muhammad Boby Pratama - 2310512056
-Naflah Thifal Afaf - 2310512063
+Haidar Fadhillah Arasy - 2310512046 <br>
+Yoga Aditya Ramasahdan - 2310512053 <br>
+Muhammad Boby Pratama - 2310512056 <br>
+Naflah Thifal Afaf - 2310512063 <br>
 Annabelle Evrilya Savhisnu - 2310512083
