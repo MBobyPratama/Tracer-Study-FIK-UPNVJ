@@ -18,7 +18,7 @@ Sebelum memulai, pastikan Anda telah menginstal perangkat lunak berikut:
 Pertama, clone repository ini ke komputer Anda menggunakan perintah berikut:
 
 ```bash
-    https://github.com/MBobyPratama/Tracer-Study-FIK-UPNVJ.git
+https://github.com/MBobyPratama/Tracer-Study-FIK-UPNVJ.git
 ```
 
 
@@ -29,7 +29,7 @@ Gantilah `username` dan `repo-name` dengan nama pengguna dan nama repository And
 Setelah cloning selesai, masuk ke direktori proyek:
 
 ```bash
-    cd repo-name
+cd repo-name
 ```
 
 ### 3. Instal Dependensi PHP
@@ -37,7 +37,7 @@ Setelah cloning selesai, masuk ke direktori proyek:
 Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 
 ```bash
-    composer install
+composer install
 ```
 
 ### 4. Konfigurasi File `.env`
@@ -45,18 +45,18 @@ Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 Salin file `.env.example` menjadi `.env`:
 
 ```bash
-    cp .env.example .env
+cp .env.example .env
 ```
 
 Kemudian, buka file `.env` dan sesuaikan konfigurasi database Anda:
 
 ```plaintext
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=nama_database
-    DB_USERNAME=username_database
-    DB_PASSWORD=password_database
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=username_database
+DB_PASSWORD=password_database
 ```
 
 Gantilah `nama_database`, `username_database`, dan `password_database` sesuai dengan pengaturan database Anda.
@@ -66,7 +66,7 @@ Gantilah `nama_database`, `username_database`, dan `password_database` sesuai de
 Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
 
 ```bash
-    php artisan key:generate
+php artisan key:generate
 ```
 
 ### 6. Migrasi Database
@@ -74,13 +74,13 @@ Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
 Setelah mengatur database, jalankan migrasi untuk membuat tabel yang diperlukan:
 
 ```bash
-    php artisan migrate
+php artisan migrate
 ```
 
 Jika Anda ingin mengisi database dengan data awal, Anda dapat menjalankan seeder:
 
 ```bash
-    php artisan db:seed
+php artisan db:seed
 ```
 
 ### 7. Instal Dependensi Frontend
@@ -88,7 +88,7 @@ Jika Anda ingin mengisi database dengan data awal, Anda dapat menjalankan seeder
 Jalankan perintah berikut untuk menginstal dependensi frontend menggunakan npm:
 
 ```bash
-    npm install
+npm install
 ```
 
 ### 8. Build Aset Frontend
@@ -96,7 +96,7 @@ Jalankan perintah berikut untuk menginstal dependensi frontend menggunakan npm:
 Setelah menginstal dependensi, jalankan perintah berikut untuk membangun aset frontend:
 
 ```bash
-    npm run dev
+npm run dev
 ```
 
 ### 9. Menjalankan Server
@@ -104,7 +104,7 @@ Setelah menginstal dependensi, jalankan perintah berikut untuk membangun aset fr
 Sekarang Anda siap untuk menjalankan server lokal. Gunakan perintah berikut:
 
 ```bash
-    php artisan serve
+php artisan serve
 ```
 
 Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi melalui browser dengan membuka URL tersebut.
@@ -114,7 +114,7 @@ Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi m
 Buka browser Anda dan masukkan URL berikut:
 
 ```plaintext
-    http://localhost:8000
+http://localhost:8000
 ```
 
 Anda sekarang dapat menggunakan aplikasi Tracer Study FIK UPNVJ!
