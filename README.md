@@ -22,8 +22,6 @@ https://github.com/MBobyPratama/Tracer-Study-FIK-UPNVJ.git
 ```
 
 
-Gantilah `username` dan `repo-name` dengan nama pengguna dan nama repository Anda.
-
 ### 2. Masuk ke Direktori Proyek
 
 Setelah cloning selesai, masuk ke direktori proyek:
@@ -32,6 +30,7 @@ Setelah cloning selesai, masuk ke direktori proyek:
 cd repo-name
 ```
 
+
 ### 3. Instal Dependensi PHP
 
 Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
@@ -39,6 +38,7 @@ Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 ```bash
 composer install
 ```
+
 
 ### 4. Konfigurasi File `.env`
 
@@ -61,6 +61,7 @@ DB_PASSWORD=password_database
 
 Gantilah `nama_database`, `username_database`, dan `password_database` sesuai dengan pengaturan database Anda.
 
+
 ### 5. Generate Kunci Aplikasi
 
 Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
@@ -68,6 +69,7 @@ Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
 ```bash
 php artisan key:generate
 ```
+
 
 ### 6. Migrasi Database
 
@@ -83,6 +85,7 @@ Jika Anda ingin mengisi database dengan data awal, Anda dapat menjalankan seeder
 php artisan db:seed
 ```
 
+
 ### 7. Instal Dependensi Frontend
 
 Jalankan perintah berikut untuk menginstal dependensi frontend menggunakan npm:
@@ -91,6 +94,7 @@ Jalankan perintah berikut untuk menginstal dependensi frontend menggunakan npm:
 npm install
 ```
 
+
 ### 8. Build Aset Frontend
 
 Setelah menginstal dependensi, jalankan perintah berikut untuk membangun aset frontend:
@@ -98,6 +102,7 @@ Setelah menginstal dependensi, jalankan perintah berikut untuk membangun aset fr
 ```bash
 npm run dev
 ```
+
 
 ### 9. Menjalankan Server
 
@@ -109,6 +114,7 @@ php artisan serve
 
 Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi melalui browser dengan membuka URL tersebut.
 
+
 ### 10. Mengakses Aplikasi
 
 Buka browser Anda dan masukkan URL berikut:
@@ -119,11 +125,13 @@ http://localhost:8000
 
 Anda sekarang dapat menggunakan aplikasi Tracer Study FIK UPNVJ!
 
+
 ## Penutup
 
 Jika Anda mengalami masalah atau memiliki pertanyaan, silakan buka isu di repository ini atau hubungi pengembang.
 
 Terima kasih telah menggunakan proyek ini!
+
 
 ## Our Team
 
