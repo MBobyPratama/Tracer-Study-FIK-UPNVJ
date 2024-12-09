@@ -115,6 +115,7 @@ php artisan serve
 Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi melalui browser dengan membuka URL tersebut.
 
 <br>
+
 ### 10. Mengakses Aplikasi
 
 Buka browser Anda dan masukkan URL berikut:
@@ -124,6 +125,7 @@ http://localhost:8000
 ```
 
 Anda sekarang dapat menggunakan aplikasi Tracer Study FIK UPNVJ!
+
 <br>
 
 ## Penutup
