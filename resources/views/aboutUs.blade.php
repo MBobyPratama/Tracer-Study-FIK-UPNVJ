@@ -35,7 +35,7 @@
                   <img src="images/bobypratama.png" alt="Muhammad Boby Pratama">
                   <h3>Muhammad Boby Pratama</h3>
                   <p>NIM. 2310512056</p>
-                  <p>Ketua</p>
+                  <p>Anggota</p>
                 </div>
                 <div class="card blank">
                 </div>
