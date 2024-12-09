@@ -62,6 +62,7 @@ DB_PASSWORD=password_database
 Gantilah `nama_database`, `username_database`, dan `password_database` sesuai dengan pengaturan database Anda.
 
 <br>
+
 ### 5. Generate Kunci Aplikasi
 
 Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
