@@ -60,8 +60,8 @@ DB_PASSWORD=password_database
 ```
 
 Gantilah `nama_database`, `username_database`, dan `password_database` sesuai dengan pengaturan database Anda.
-<br>
 
+<br>
 ### 5. Generate Kunci Aplikasi
 
 Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
@@ -113,8 +113,8 @@ php artisan serve
 ```
 
 Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi melalui browser dengan membuka URL tersebut.
-<br>
 
+<br>
 ### 10. Mengakses Aplikasi
 
 Buka browser Anda dan masukkan URL berikut:
