@@ -2,6 +2,14 @@
 
 Selamat datang di proyek Tracer Study Fakultas Ilmu Komputer UPN Veteran Jakarta! Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Anda.
 
+## Our Team
+
+Haidar Fadhillah Arasy - 2310512046 <br>
+Yoga Aditya Ramasahdan - 2310512053 <br>
+Muhammad Boby Pratama - 2310512056 <br>
+Naflah Thifal Afaf - 2310512063 <br>
+Annabelle Evrilya Savhisnu - 2310512083 <br>
+
 ## Prasyarat
 
 Sebelum memulai, pastikan Anda telah menginstal perangkat lunak berikut:
@@ -135,11 +143,3 @@ Jika Anda mengalami masalah atau memiliki pertanyaan, silakan buka isu di reposi
 
 Terima kasih telah menggunakan proyek ini!
 <br>
-
-## Our Team
-
-Haidar Fadhillah Arasy - 2310512046 <br>
-Yoga Aditya Ramasahdan - 2310512053 <br>
-Muhammad Boby Pratama - 2310512056 <br>
-Naflah Thifal Afaf - 2310512063 <br>
-Annabelle Evrilya Savhisnu - 2310512083
