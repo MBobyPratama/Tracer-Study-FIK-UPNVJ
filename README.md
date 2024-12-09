@@ -20,7 +20,7 @@ Pertama, clone repository ini ke komputer Anda menggunakan perintah berikut:
 ```bash
 https://github.com/MBobyPratama/Tracer-Study-FIK-UPNVJ.git
 ```
-
+<br>
 
 ### 2. Masuk ke Direktori Proyek
 
@@ -29,7 +29,7 @@ Setelah cloning selesai, masuk ke direktori proyek:
 ```bash
 cd repo-name
 ```
-
+<br>
 
 ### 3. Instal Dependensi PHP
 
@@ -38,7 +38,7 @@ Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 ```bash
 composer install
 ```
-
+<br>
 
 ### 4. Konfigurasi File `.env`
 
@@ -60,7 +60,7 @@ DB_PASSWORD=password_database
 ```
 
 Gantilah `nama_database`, `username_database`, dan `password_database` sesuai dengan pengaturan database Anda.
-
+<br>
 
 ### 5. Generate Kunci Aplikasi
 
@@ -69,7 +69,7 @@ Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
 ```bash
 php artisan key:generate
 ```
-
+<br>
 
 ### 6. Migrasi Database
 
@@ -84,7 +84,7 @@ Jika Anda ingin mengisi database dengan data awal, Anda dapat menjalankan seeder
 ```bash
 php artisan db:seed
 ```
-
+<br>
 
 ### 7. Instal Dependensi Frontend
 
@@ -93,7 +93,7 @@ Jalankan perintah berikut untuk menginstal dependensi frontend menggunakan npm:
 ```bash
 npm install
 ```
-
+<br>
 
 ### 8. Build Aset Frontend
 
@@ -102,7 +102,7 @@ Setelah menginstal dependensi, jalankan perintah berikut untuk membangun aset fr
 ```bash
 npm run dev
 ```
-
+<br>
 
 ### 9. Menjalankan Server
 
@@ -113,7 +113,7 @@ php artisan serve
 ```
 
 Server akan berjalan di `http://localhost:8000`. Anda dapat mengakses aplikasi melalui browser dengan membuka URL tersebut.
-
+<br>
 
 ### 10. Mengakses Aplikasi
 
@@ -124,14 +124,14 @@ http://localhost:8000
 ```
 
 Anda sekarang dapat menggunakan aplikasi Tracer Study FIK UPNVJ!
-
+<br>
 
 ## Penutup
 
 Jika Anda mengalami masalah atau memiliki pertanyaan, silakan buka isu di repository ini atau hubungi pengembang.
 
 Terima kasih telah menggunakan proyek ini!
-
+<br>
 
 ## Our Team
 
