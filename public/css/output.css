@@ -59,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
 .event .title {
@@ -88,6 +88,7 @@
 
 .event .card {
     text-align: center;
+    align-content: center;
     padding: 20px;
     transition: transform 0.3s;
 }
@@ -97,14 +98,17 @@
 }
 
 .event .card img {
-    width: 90%;
-    height: 90%;
+    width: 400px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto;
 }
 
 .event .card h1 {
     text-align: left;
     font-size: 1.5rem;
     color: #000000;
+    margin-top: 0;
 }
 
 .event .card h2 {
@@ -117,24 +121,26 @@
     text-align: left;
 }
 
-
 /* -------- event --------- */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
 }
 
-.special-header, .special-footer {
+.special-header,
+.special-footer {
     background-color: #4c4b49;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #333;
 }
 
@@ -250,26 +256,37 @@ p {
     background-color: #717171;
 }
 
-.prev, .next {
+.prev {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
+    top: 50%; /* Center vertically */
+    left: 10px; /* Adjust this value to move it horizontally */
+    transform: translateY(-50%); /* Center the button vertically */
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
     user-select: none;
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
